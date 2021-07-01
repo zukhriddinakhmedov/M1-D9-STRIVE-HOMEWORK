@@ -1,5 +1,12 @@
 window.onload = function(){
     displayBingoBoard()
+   const btn = document.getElementById('btn-random')
+   btn.addEventListener('click', function () {
+       const random = Math.floor(Math.random()*76)
+       const cells = document.querySelectorAll('.number')
+       cells[random-1].style.color="red"
+       console.log(random, cells)
+   })
 }
 
 const displayBingoBoard = function(){
@@ -9,5 +16,6 @@ const displayBingoBoard = function(){
         newNumberNode.innerText = bingoNumber
         newNumberNode.classList.add("number")
         bingoBoardNode.appendChild(newNumberNode)
+       
     }
 }
