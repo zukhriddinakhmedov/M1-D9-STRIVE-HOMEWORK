@@ -1,6 +1,6 @@
 body{
-
-   
+    background-color: grey;
+    color: white;
     max-width: 128px;
     margin: 0 auto;
 
@@ -23,7 +23,7 @@ h1{
     width: 500%
 }
  .number {
-        background-color:white;
+        background-color:black;
         display: inline-block;
         width: 12%;
         min-height: 64px;
@@ -36,4 +36,3 @@ h1{
         margin: 3px;
         border-color: #383838;
      }
- }
